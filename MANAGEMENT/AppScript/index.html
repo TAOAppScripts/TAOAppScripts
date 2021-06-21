@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+  <head>
+    <base target="_top">
+    <script>
+        function formSubmit() {
+            google.script.run.getValuesFromForm(document.forms[0]);
+            google.script.host.close();
+        }
+   </script> 
+  </head>
+  <body>
+  <form  style="margin-bottom: 3em;">
+      <? for (var i = 0; i < data.length; i++) { ?>
+        <div style="margin-bottom: 1em;">
+        <input type="checkbox" name=<?= data[i]?> value=<?= data[i] ?>> <?= data[i]?><br>
+        </div>
+      <? } ?>
+
+   </form>
+   <input onclick="formSubmit()" style="width: 200px"; type="button" value="Submit" />
+   &nbsp;
+   <input onclick="google.script.host.close()" style="width: 200px"; type="button"  value="Close"  />
+  </body>
+</html>
+
+

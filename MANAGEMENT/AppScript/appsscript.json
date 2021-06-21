@@ -1,0 +1,18 @@
+{
+  "timeZone": "Europe/Paris",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [{
+      "menuName": "APLICAR _FORMULA _EN_CELDA",
+      "functionName": "APLICAR_FORMULA_EN_CELDA",
+      "defaultShortcut": "Ctrl+Alt+Shift+8"
+    }, {
+      "menuName": "autocompletar",
+      "functionName": "autocompletar",
+      "defaultShortcut": "Ctrl+Alt+Shift+4"
+    }]
+  }
+}
